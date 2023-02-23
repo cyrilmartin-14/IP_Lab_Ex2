@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registry</title>
+        <script>
+            function registration() {
+                var na = document.forms["Register"]["name"].value;
+                var da = document.forms["Register"]["date-of-origin"].value;
+                var em = document.forms["Register"]["email"].value;
+                var ge = document.forms["Register"]["gender"].value;
+                var ph = document.forms["Register"]["phone"].value;
+                var days = document.forms["Register"]["id"].value;
+                if (na == "" && da == "" && em == "" && ge == "" && ph == "" && days == "") {
+                alert("Enter Details");
+                return false;
+            }
+            else if (na == ""){
+                alert("Enter Location Name");
+                return false;
+            }   
+            else if (da == ""){
+                alert("Enter date-of-origin");
+                return false;
+            } 
+             else if(em == ""){
+                alert("Enter mail Id");
+                return false;
+            }
+            else if (ge == ""){
+                alert("Enter gender");
+                return false;
+            } 
+            else if (ph == ""){
+                alert("Enter Pnone number! ");
+                return false;
+            } 
+            else if (days == ""){
+                alert("Enter valid number of days");
+                return false;
+            } 
+        }
+
+        </script>
+    </head>
+    <body bgcolor="EA2323">
+        <form name="Register">
+        <center>
+            <h3>MARVEL FANCLUB REGISTRATION</h3>
+            <br>
+            <img src="hand-fan-art.jpg" width="500" height="300">
+            <br><br>
+            <h3>ENTER DETAILS</h3>
+            <table  style="border-spacing: 5pt;">
+                <tr>
+                    <td>Enter Name: </td>
+                    <td><input type="text" name="name" placeholder="Enter your SupeName"></td>
+                </tr>
+                <tr>
+                    <td>Date of Origin: </td>
+                    <td><input type="date" name="date-of-origin"></td>
+                </tr>
+                <tr>
+                    <td>Email : </td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Gender : </td>
+                    <td>
+                        <select name="gender">
+                            <option value="">Select gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Alien">Alien</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone No. : </td>
+                    <td><input type="tel" name="phone"></td>
+                </tr>    
+                <tr>
+                    <td>Supe_id</td>
+                    <td><input type="number" name="id" min=1 ></td>
+                </tr>      
+        </table>
+        <br><br>
+        <div>
+            <input type="submit" name="submit" onclick="registration()" form action="login.html">&nbsp;&nbsp;&nbsp;
+            <input type="reset" name="reset";>
+        </div>
+        </center>
+        </form>
+    </body>
+</html>

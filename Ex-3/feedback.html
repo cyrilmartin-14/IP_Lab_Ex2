@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Feedback
+        </title>
+        <script>
+            function validation() 
+            {
+             let a = document.forms["fb"]["name"].value;
+             if (a == "") {
+                alert("Invalid name :(");
+                return false;
+            }
+        }
+        </script>
+        
+    </head><center>
+    <body bgcolor="EA2323"><center>
+        <br><br><br>
+        <h2>SHARE YOUR FEEDBACK</h2>
+        <br>
+        <img src="mmm.png" width="450" height="200">
+        <form name="fb">
+
+        <table>
+            <tr>
+                <td>Your Supe-Name : </td>
+                <td><input type="text" name="name"></td>
+            </tr> 
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr>
+                <td>SHARE SOMETHING (optional)</td>
+            </tr><br><br>
+        </table>
+        <br>
+        <textarea rows="4" cols="40" name="ta"></textarea>
+           
+        <br>
+        <input type="submit" name="submit" onclick="validation()"><br><br><br>
+    </form>
+        
+    </body>
+</html>
