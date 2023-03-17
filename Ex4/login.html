@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title> 
+    <script>
+        function validate() {
+            var n = document.forms["f"]["id"].value;
+            var p = document.forms["f"]["pwd"].value;
+            if (n == "" && p == ""){
+                alert("Enter username and password");
+                return false;
+            }
+            
+            else if (n == ""){
+                alert("Enter the Username");
+                return false;
+            }
+
+            else if (p == ""){
+                alert("Enter the Password");
+                return false;
+            }
+            
+            else if(n!="user"){
+                alert("Invalid username");
+                return false;
+            }
+            else if(p!="password@987"){
+                alert("Invalid Password");
+                return false;
+            }
+        
+        }
+    </script>
+    <style>
+        .center {
+            width: 400px; 
+            margin: auto; 
+            text-align: center;
+            padding: 10em;
+
+        }
+        table {
+            border-spacing: 5pt;
+        }
+        .button:hover{
+            background-color: black;
+            color: whitesmoke;
+            cursor: pointer;
+            border-radius: 8pt;
+        }
+    </style>
+
+</head>
+<body style="background-color: #2B547E">
+    <div class="center">
+        <h1>
+            <b><w>LOGIN</w></b><br>
+        </h1>
+            <form name="f" onsubmit="return validate()"><center>
+                <table class="table" style="font-weight: bold;" >
+                    <tr>
+                        <td><w>USERNAME :</w></td>
+                        <td><input type="text" name="id"></td>
+                    </tr>
+                    <tr>
+                        <td><w>PASSWORD :</w></td>
+                        <td> <input type="password" name="pwd"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr>
+                        <td><input type="reset" class="button"></td>
+                        <td><input type="submit" style="margin-left: 70%;" class="button" formaction="transaction.html"></td>
+                    </tr>
+                </table>
+        </center></form><br><br>
+        <a href="register.html"><button class="button">Sign up</button></a>
+    </div>
+ 
+</body>
+</html>
