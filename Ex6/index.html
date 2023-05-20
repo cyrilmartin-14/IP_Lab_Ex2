@@ -1,55 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
 </head>
 
-<body style="background-color: bisque;">
-    <h2>Create student profile</h2>
-    <hr>
-    <form action="./create" method="post">
-        <label for="id">ID:</label>
-        <input type="text" id="id" name="id"><br>
+<body>
+<h1>Character Stats and Information</h1><br><br>
+<a href="./db1" style="color:black; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans- serif;">
+Display all Character details</a>
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br>
+<h3>View Character stats</h3>
+<form action="./db2">
 
-        <label for="dept">Department</label>
-        <input type="text" id="dept" name="dept"><br>
+<!--Drop down selection-->
+<label for="character">Character ID </label>
+<input type="text" name="cid">
+<br>
+<br>
+<input type="submit" value="SUBMIT"/>
 
-        <label for="marks">Marks</label>
-        <input type="text" id="marks" name="marks"><br>
-        <br>
-        <input type="submit" value="Submit">
-    </form>
-
-    <br>
-    <h2>Display student details</h2>
-    <hr>
-      <a href="./display">Click here to display student details</a>
-    <hr>
-    <br>
-    <h2>Update details</h2>
-    <hr>
-    <form method="get" action="./update">
-        Name:<input type="text" name="name"></input><br>
-         Marks:<input type="text" name="marks"></input><br><br>
-        <input type="submit" value="Submit"></input>
-    </form>
-    <br>
-    <h2>Delete details</h2>
-    <hr>
-    <form action="./delete" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
-        <input type="submit" value="Delete">
-    </form>
-
-
+</form>
 </body>
-
 </html>
