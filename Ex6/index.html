@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 
-<body>
-<h1>Character Stats and Information</h1><br><br>
-<a href="./db1" style="color:black; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans- serif;">
-Display all Character details</a>
+<body style="background-color: bisque;">
+    <h2>Add MARVEL Movies info</h2>
+    <hr>
+    <form action="./create" method="post">
+        <label for="Title">Title:</label>
+        <input type="text" id="Title" name="Title"><br>
 
-<h3>View Character stats</h3>
-<form action="./db2">
+        <label for="year">Year :</label>
+        <input type="text" id="year" name="year"><br>
 
-<!--Drop down selection-->
-<label for="character">Character ID </label>
-<input type="text" name="cid">
-<br>
-<br>
-<input type="submit" value="SUBMIT"/>
+        <label for="co">Country of Origin:</label>
+        <input type="text" id="co" name="co"><br>
 
-</form>
+        <label for="comment">Comment</label>
+        <input type="text" id="comment" name="comment"><br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <h2>Display MARVEL Movies details</h2>
+    <hr>
+      <a href="./display">Click here to display movies details</a>
+    <hr>
+    <br>
+    <h2>Update details</h2>
+    <hr>
+    <form method="get" action="./update">
+        Title:<input type="text" name="Title"></input><br>
+        Comment:<input type="text" name="comment"></input><br><br>
+        <input type="submit" value="Submit"></input>
+    </form>
+    <br>
+    <h2>Delete details</h2>
+    <hr>
+    <form action="./delete" method="post">
+        <label for="Title">Title:</label>
+        <input type="text" id="Title" name="Title"><br><br>
+        <input type="submit" value="Delete">
+    </form>
 </body>
 </html>
