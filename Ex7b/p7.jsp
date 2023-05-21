@@ -34,7 +34,7 @@
        out1.println("<br>");
        out1.println("<hr>");
     
-        out1.println( "<center><h1 > "+ MARVEL +"</h1></center>");
+        out1.println( "<center><h1 > "+ marvel +"</h1></center>");
     try{
         // Register JDBC driver
         Class.forName(JDBC_DRIVER);
