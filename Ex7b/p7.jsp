@@ -13,7 +13,7 @@
 
 <body>
     <% String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    String DB_URL = "jdbc:mysql://localhost:3306/animedb";
+    String DB_URL = "jdbc:mysql://localhost:3306/marveldb";
 
     // Database credentials
     String USER = "root";
@@ -34,7 +34,7 @@
        out1.println("<br>");
        out1.println("<hr>");
     
-        out1.println( "<center><h1 > "+summa +"</h1></center>");
+        out1.println( "<center><h1 > "+ MARVEL +"</h1></center>");
     try{
         // Register JDBC driver
         Class.forName(JDBC_DRIVER);
